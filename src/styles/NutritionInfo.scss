@@ -1,0 +1,53 @@
+.nutrition-info {
+  .container {
+    max-width: 600px; /* Adjust container width */
+    margin: 0 auto;
+
+    form {
+      margin-top: 10px; /* Remove unnecessary space above the form */
+
+      .form-control {
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        margin-bottom: 10px; /* Add space between fields */
+        transition: border-color 0.3s; /* Smooth transition for border color */
+
+        &:focus {
+          border-color: #6FCB9F; /* Change border color on focus */
+          outline: none; /* Remove default outline */
+        }
+      }
+
+      .form-label {
+        margin-bottom: 5px;
+        font-weight: bold;
+        display: block; /* Ensure label is above the input/textarea */
+      }
+
+      .submit-button {
+        display: block;
+        width: auto; /* Reduce button size */
+        padding: 8px 20px; /* Adjust padding */
+        margin-top: 15px;
+        background-color: #6FCB9F;
+        border: none;
+        border-radius: 5px;
+        font-size: 14px; /* Reduce font size */
+        cursor: pointer;
+        transition: background-color 0.3s; /* Smooth transition for background color */
+
+        &:hover {
+          background-color: #5cbf92; /* Change background color on hover */
+        }
+      }
+    }
+
+    canvas {
+      margin-top: 30px;
+      max-height: 400px; /* Limit canvas height for better layout */
+      border-radius: 5px; /* Add border radius to canvas */
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+    }
+  }
+}
